@@ -50,3 +50,11 @@ The cube class represents the rubik's cube.
 }
 ```
 
+**Moves notation**
+
+- t: Top side move 1 clockwise
+- f: Front side move 1 clockwise
+- d: Down side move 1 clockwise
+- r: Right side move 1 clockwise
+- l: Left side move 1 clockwise
+- b: Back side move 1 clockwise
