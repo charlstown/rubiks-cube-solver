@@ -36,8 +36,8 @@ class Drive:
         return self
 
     def __front_move(self):
-        print(self.dcube)
         new_dcube = self.dcube.copy()
+        # White face permutation
         new_dcube['w'][0] = self.dcube['w'][6]
         new_dcube['w'][1] = self.dcube['w'][3]
         new_dcube['w'][2] = self.dcube['w'][0]
@@ -46,5 +46,22 @@ class Drive:
         new_dcube['w'][6] = self.dcube['w'][8]
         new_dcube['w'][7] = self.dcube['w'][5]
         new_dcube['w'][8] = self.dcube['w'][2]
+        # Red face permutation
+        new_dcube['r'][6] = self.dcube['b'][8]
+        new_dcube['r'][7] = self.dcube['b'][5]
+        new_dcube['r'][8] = self.dcube['b'][2]
+        # Green face permutation
+        new_dcube['g'][0] = self.dcube['r'][6]
+        new_dcube['g'][3] = self.dcube['r'][7]
+        new_dcube['g'][6] = self.dcube['r'][8]
+        # Orange face permutation
+        new_dcube['o'][0] = self.dcube['g'][6]
+        new_dcube['o'][1] = self.dcube['g'][3]
+        new_dcube['o'][2] = self.dcube['g'][0]
+        # Red face permutation
+        new_dcube['b'][2] = self.dcube['o'][0]
+        new_dcube['b'][5] = self.dcube['o'][1]
+        new_dcube['b'][8] = self.dcube['o'][2]
+        # Apply permutation
         self.dcube = new_dcube
         return self

@@ -9,7 +9,6 @@ class Cube:
         Constructor method to generate the initial cube variables.
         :param data: loads the cube data from the json file with the latest saved state.
         """
-
         self.dcube = pd.DataFrame(data)
 
     def load(self) -> pd.DataFrame:
