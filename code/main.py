@@ -34,12 +34,15 @@ class App:
 
         # Variables
         self.help = """Valid commands:
-                    - t: Top side move 1 clockwise
-                    - f: Front side move 1 clockwise
-                    - d: Down side move 1 clockwise
-                    - r: Right side move 1 clockwise
-                    - l: Left side move 1 clockwise
-                    - b: Back side move 1 clockwise
+                    - t: Top side move 1 clockwise.
+                    - f: Front side move 1 clockwise.
+                    - d: Down side move 1 clockwise.
+                    - r: Right side move 1 clockwise.
+                    - l: Left side move 1 clockwise.
+                    - b: Back side move 1 clockwise.
+                    - h: show the help.
+                    - s: solve the cube.
+                    - c: close the app.
                     """
         self.dcube = self.cube.load()
 
@@ -72,7 +75,8 @@ class App:
             return False
 
     def __start_commands(self):
-        inpt = input("Please insert a move, type 'h' to help or type 'c' to exit the app:\n")
+        intro = """Please insert a face to move (f, t, d, r, l, b) or type 'h' for help:\n"""
+        inpt = input(intro)
         check = self.__check_for_moves(inpt)
         if inpt != 'c' and check:
             self.dcube = self.drive.move(self.dcube, inpt)
@@ -85,6 +89,8 @@ class App:
         elif inpt != 'c' and not check:
             print(f"Sorry, the command {inpt} is not valid.")
             return self.__start_commands()
+        elif inpt == 'c':
+            print('Closing the app.')
 
 
 # Starting the app when main
