@@ -56,6 +56,7 @@ class App:
         # Rendering latest state
         print("Rendering the latest saved state from the Cube:")
         self.viz.render_2d(self.dcube)
+        self.viz.render_3d(self.dcube)
 
         # Starting the interpreter
         self.__start_commands()

@@ -32,10 +32,24 @@ class Viz:
         print(unwrap)
 
     @staticmethod
-    def render_3d(cube):
+    def render_3d(cube): #todo figure out how to render our own matrix
         # https://www.geeksforgeeks.org/how-to-draw-3d-cube-using-matplotlib-in-python/
-        # Cube axis and data
-        axis = [3, 3, 3]
-        data = np.ones(axis, dtype = int)
-        # Now we define the colors
-        pass
+        # Create axis
+        axes = [3, 3, 3]
+        # Create Data
+        data = np.ones(axes, dtype=bool)
+        # Control colour
+        colors = np.empty(axes + [3], dtype=int)
+        colors[0] = [1, 0, 0]  # red
+        colors[1] = [0, 1, 0]  # green
+        colors[2] = [0, 0, 1]  # blue
+        # Plot figure
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection='3d')
+        # Voxels is used to customizations of
+        # the sizes, positions and colors.
+        ax.voxels(data, facecolors=colors, edgecolors='black')
+        # it can be used to change the axes view
+        ax.view_init(50, 0)
+
+        return plt.show()
