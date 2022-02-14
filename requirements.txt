@@ -1,8 +1,2 @@
 pandas~=1.0.3
-pip~=21.1.2
-wheel~=0.36.2
-request~=2019.4.13
-cryptography~=2.8
-keyring~=18.0.1
-setuptools~=57.0.0
-future~=0.18.2
+
