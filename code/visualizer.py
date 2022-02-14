@@ -1,4 +1,6 @@
-
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
 
 class Viz:
     def __init__(self):
@@ -32,4 +34,8 @@ class Viz:
     @staticmethod
     def render_3d(cube):
         # https://www.geeksforgeeks.org/how-to-draw-3d-cube-using-matplotlib-in-python/
+        # Cube axis and data
+        axis = [3, 3, 3]
+        data = np.ones(axis, dtype = int)
+        # Now we define the colors
         pass
