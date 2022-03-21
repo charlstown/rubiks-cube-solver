@@ -19,7 +19,7 @@ class App:
     - run
     """
 
-    def __init__(self, dir_config, face_map, cube_saved):
+    def __init__(self, dir_config: str, dir_face_map: str, dir_cube_saved: str):
         """
         Class constructor: Here you should read the config file, generate
         the instances from modules and declare global variables.
@@ -30,11 +30,11 @@ class App:
             self.config = json.load(f)
 
         # Reading the face map json file
-        with open(face_map) as f:
+        with open(dir_face_map) as f:
             face_map = json.load(f)
 
         # Reading the config json file
-        with open(cube_saved) as f:
+        with open(dir_cube_saved) as f:
             self.data = json.load(f)
 
         # Instance
@@ -78,7 +78,7 @@ class App:
         # Closing program
         print("[APP] Program closed")
 
-    def __manual_move(self, repetitions):
+    def __manual_move(self, repetitions: int):
         """
         This method generates the input number of random moves in the cube.
         :param repetitions: number of moves to repeat.
@@ -151,5 +151,5 @@ if __name__ == "__main__":
         print(f"- {k}: {v}")
 
     # App execution
-    my_app = App(dir_config=arg_config, face_map=arg_map, cube_saved=arg_cube)
+    my_app = App(dir_config=arg_config, dir_face_map=arg_map, dir_cube_saved=arg_cube)
     my_app.run()
