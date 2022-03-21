@@ -19,12 +19,16 @@ class App:
     - run
     """
 
-    def __init__(self, face_map, cube_saved):
+    def __init__(self, dir_config, face_map, cube_saved):
         """
         Class constructor: Here you should read the config file, generate
         the instances from modules and declare global variables.
         :param path: Explain the dir_config parameter.
         """
+        # Reading the face map json file
+        with open(dir_config) as f:
+            self.config = json.load(f)
+
         # Reading the face map json file
         with open(face_map) as f:
             face_map = json.load(f)
@@ -34,8 +38,8 @@ class App:
             self.data = json.load(f)
 
         # Instance
-        self.cube = Cube(self.data)
-        self.viz = Viz()
+        self.cube = Cube(self.config, self.data)
+        self.viz = Viz(self.config)
         self.drive = Drive(face_map)
 
         # Variables
@@ -55,87 +59,82 @@ class App:
 
     def run(self):
         """
-        This method runs the whole app and manage all calls.
-        :return:
+        This method runs the front and the back as the app orchestrator, managing all calls.
+        :return: None
         """
-        print("APP: Initializing the Rubik's Cube")
+        print("[APP] Initializing the Rubik's Cube")
 
         # Rendering latest state
-        print("Rendering the latest saved state from the Cube:")
-        self.viz.render_2d(self.dcube)
-        self.viz.render_3d(self.dcube, self.moves_counter)
+        print("[APP] Rendering the latest saved state from the Cube:")
+        self.viz.render(self.dcube, self.moves_counter)
 
-        # Manual resolution of the code
-        # self.__manual_move(100)
-
-        # Starting the interpreter
-        self.__start_commands()
+        # Starting the communication interface
+        self.__interface()
 
         # Saving the cube
         self.cube.save(self.dcube)
-        print("Rubik\'s cube successfully saved")
+        print("[APP] Rubik\'s cube successfully saved")
 
         # Closing program
-        print("Program closed")
-
-    @staticmethod
-    def __check_for_moves(inpt):
-        if bool(re.search("^([ftdlrb][\\d])+$", inpt)):
-            return True
-        else:
-            return False
-
-    def __reset_cube(self):
-        # Reading the config json file
-        with open('data/cube_done.json') as f:
-            self.data = json.load(f)
-        # Restart Cube
-        self.cube = Cube(self.data)
-        self.dcube = self.cube.load()
+        print("[APP] Program closed")
 
     def __manual_move(self, repetitions):
-        for i in range(repetitions):
+        """
+        This method generates the input number of random moves in the cube.
+        :param repetitions: number of moves to repeat.
+        :return: None.
+        """
+        for i in range(repetitions + 1):
             permutation = self.drive.random_move()
             self.dcube = self.drive.move(self.dcube, permutation)
-            self.viz.render_3d(self.dcube, self.moves_counter)
+            self.viz.render(self.dcube, self.moves_counter)
             self.moves_counter += 1
             # time.sleep(1)
 
-    def __start_commands(self):
+    def __interface(self):
+        """
+        This method acts as a front-end to input the commands and interact with the cube.
+        :return: None.
+        """
         intro = """Please insert a face to move (f, t, d, r, l, b) or type 'r' to reset or 'h' for help:\n"""
         inpt = input(intro)
-        check = self.__check_for_moves(inpt)
+        check = self.drive.check_for_moves(inpt)
+
+        # Input commands
         if inpt != 'c' and check:
             self.dcube = self.drive.move(self.dcube, inpt)
-            print("The Cube was updated:")
-            self.viz.render_2d(self.dcube)
+            print("[APP] The Cube was updated:")
             self.moves_counter += 1
-            self.viz.render_3d(self.dcube, self.moves_counter)
-            return self.__start_commands()
+            self.viz.render(self.dcube, self.moves_counter)
+            return self.__interface()
         elif inpt == 'h':
             print(self.help)
-            return self.__start_commands()
+            return self.__interface()
         elif inpt == 'r':
-            self.__reset_cube()
+            self.dcube = self.cube.restart()
             self.moves_counter = 0
-            self.viz.render_3d(self.dcube, self.moves_counter)
-            print(f'Cube was restarted after {self.moves_counter} moves.')
-            return self.__start_commands()
+            self.viz.render(self.dcube, self.moves_counter)
+            print(f'[APP] Cube was restarted after {self.moves_counter} moves.')
+            return self.__interface()
         elif inpt == 'x':
-            self.__manual_move(50)
-            return self.__start_commands()
+            msg = "[APP] Please select the number of random moves to apply:\n"
+            moves = int(input(msg))
+            self.__manual_move(moves)
+            return self.__interface()
         elif inpt != 'c' and not check:
-            print(f"Sorry, the command {inpt} is not valid.")
-            return self.__start_commands()
+            print(f"[APP] Sorry, the command {inpt} is not valid.")
+            return self.__interface()
         elif inpt == 'c':
-            print('Closing the app.')
+            print('[APP] Closing the app.')
 
 
 # Starting the app when main
 if __name__ == "__main__":
     # Initialize the argument parser
     parser = argparse.ArgumentParser()
-    parser.add_argument("--cube", "-c", default="data/cube_saved.json",
+    parser.add_argument("--config", "-c", default="data/config.json",
+                        help="Add the config file path after this flag")
+    parser.add_argument("--cube", "-cb", default="data/cube_saved.json",
                         help="Add the config file path after this flag")
     parser.add_argument("--mapping", "-m", default="data/face_map.json",
                         help="Add the config file path after this flag")
@@ -144,6 +143,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Argument variables
+    arg_config = args.config
     arg_cube = args.cube
     arg_map = args.mapping
     print("Initial args:")
@@ -151,5 +151,5 @@ if __name__ == "__main__":
         print(f"- {k}: {v}")
 
     # App execution
-    my_app = App(face_map=arg_map, cube_saved=arg_cube)
+    my_app = App(dir_config=arg_config, face_map=arg_map, cube_saved=arg_cube)
     my_app.run()

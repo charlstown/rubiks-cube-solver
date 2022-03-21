@@ -11,10 +11,15 @@ class Viz:
     """
     Class to render and visualize the cube with different representations.
     """
-    def __init__(self):
+    def __init__(self, config: dict):
         """
         Constructor from Viz class to preconfigure the render methods.
+        :param config: Initialize configuration parameters
         """
+        # Initialize configuration parameters
+        self.config = config
+
+        # Initialize visualization parameters
         plt.ion()
         self.surfaces = []
         self.fig = plt.figure()
@@ -28,11 +33,18 @@ class Viz:
         self.txt_moves = self.ax.text2D(0.05, 0.95, '0 moves', transform=self.ax.transAxes,
                                         fontstyle='italic', color='grey')
 
+    def render(self, cube, counter):
+        if self.config['render_2d']:
+            self.__render_2d(cube, counter)
+        if self.config['render_3d']:
+            self.__render_3d(cube, counter)
+
     @staticmethod
-    def render_2d(cube):
+    def __render_2d(cube: pd.DataFrame, counter: int = 0):
         """
         Prints a 2D unwrapped render with the actual state of the passed cube variable.
-        :param cube:
+        :param cube: Dataframe with the state of the cube.
+        :param counter: number applied of moves.
         :return: None
         """
         c = cube
@@ -51,13 +63,14 @@ class Viz:
          |{c['o'][6]}|{c['o'][7]}|{c['o'][8]}|
         """
         # Render Unwrapped picture
+        print(f'{counter} moves')
         print(unwrap)
 
-    def __gen_colors(self, cube):
+    def __gen_colors(self, cube: pd.DataFrame):
         """
         Generates the geometry from the given cube parameter.
-        :param cube: Dataframe with the state of the cube.
-        :return: None
+        :param cube: dataframe with the state of the cube.
+        :return: None.
         """
         # Adding front
         face_map = {'w': [2, 3, 1], 'r': [2, 1, 3], 'o': [2, 1, 0], 'g': [0, 1, 2], 'b': [3, 1, 2], 'y': [2, 0, 1]}
@@ -67,10 +80,10 @@ class Viz:
 
     def __map_colors(self, cube: pd.DataFrame, color: str) -> list:
         """
-        Map the color by linking the Dataframe with the generation order of the surfaces
-        :param cube: contains a Dataframe with the state of the cube
-        :param color: contains a string with the color of the face is being mapped
-        :return: a list with the colors mapped
+        Map the color by linking the Dataframe with the generation order of the surfaces.
+        :param cube: contains a Dataframe with the state of the cube.
+        :param color: contains a string with the color of the face is being mapped.
+        :return: a list with the colors mapped.
         """
         values = list(cube[color])
         values = [value[0] if value[0] != 'o' else 'orange' for value in values]
@@ -86,7 +99,7 @@ class Viz:
 
     def __create_faces(self, gen_code: list, colors: list):
         """
-        Generates the cube by assigning colors and plotting the geometry
+        Generates the cube by assigning colors and plotting the geometry.
         :param gen_code: order to create the coplanar surfaces
         :param colors: list with the colors mapped
         :return: None
@@ -103,10 +116,10 @@ class Viz:
     @staticmethod
     def __gen_points(code: int, var: list):
         """
-        Generates the points of each coplanar surface from an array of coordinates
-        :param code:
-        :param var:
-        :return: None
+        Generates the points of each coplanar surface from an array of coordinates.
+        :param code: code with the plane situation.
+        :param var: coordinates to be defined.
+        :return: None.
         """
         if code == 1:
             return np.array([[var[0], var[0]], [var[0] + 1, var[0] + 1]])
@@ -118,9 +131,9 @@ class Viz:
     def __plot_surface(self, face: list, colors: list):
         """
         Plots a single face given the points of each square and the colors.
-        :param face: list with the arrays of the points to be ploted [[array][array][...]]
-        :param colors: list with the letter of the surface color
-        :return: None
+        :param face: list with the arrays of the points to be ploted [[array][array][...]].
+        :param colors: list with the letter of the surface color.
+        :return: update the self class variable with the surfaces generated.
         """
         for points, color in zip(face, colors):
             self.surfaces.append(self.ax.plot_surface(points[0], points[1], points[2],
@@ -129,26 +142,29 @@ class Viz:
                                                       edgecolors='black'))
         return self.surfaces
 
-    def render_3d(self, cube: pd.DataFrame, aux_text=0):
+    def __render_3d(self, cube: pd.DataFrame, aux_text=0):
         """
         Render a 3D view of the cube from the given data.
-        :param cube: Dataframe with the data of the cube.
-        :param aux_text: ND
-        :return: None
+        :param cube: dataframe with the data of the cube.
+        :param aux_text: number applied of moves .
+        :return: None.
         """
         for surface in self.surfaces:
             surface.remove()
         self.surfaces = []
         self.__gen_colors(cube)
+
         # Create axis
         axes = [3, 3, 3]
+
         # Create Data
         data = np.ones(axes, dtype=bool)
         self.fig.canvas.manager.set_window_title('My Rubiks Cube')
+
         # Text box
         self.txt_moves.remove()
-        self.txt_moves = self.ax.text2D(0.05, 0.95, str(aux_text) + ' moves', transform=self.ax.transAxes,
-                           fontstyle='italic', color='grey')
+        self.txt_moves = self.ax.text2D(0.05, 0.95, f'{aux_text} moves', transform=self.ax.transAxes,
+                                        fontstyle='italic', color='grey')
         # Plot figure
         self.fig.canvas.draw()
         self.fig.canvas.flush_events()

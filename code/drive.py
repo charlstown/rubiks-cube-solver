@@ -1,12 +1,20 @@
 # Libraries
 import pandas as pd
 import random
+import re
 
 
 class Drive:
     def __init__(self, face_map):
         self.dcube = None
         self.face_map = face_map
+
+    @staticmethod
+    def check_for_moves(input_move):
+        if bool(re.search("^([ftdlrb][\\d])+$", input_move)):
+            return True
+        else:
+            return False
 
     def move(self, dcube: pd.DataFrame, inpt: str):
         moves = self.__parser(inpt)
