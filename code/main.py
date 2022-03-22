@@ -14,16 +14,20 @@ from drive import Drive
 
 class App:
     """
-    Class description: Explain the main class.
-    Name the public methods from this class:
-    - run
+    Class of the APP acting as orchestrator calling other classes.
+    Methods:
+        - run
+        - __manual_move
+        - __interface
     """
 
     def __init__(self, dir_config: str, dir_face_map: str, dir_cube_saved: str):
         """
-        Class constructor: Here you should read the config file, generate
-        the instances from modules and declare global variables.
-        :param path: Explain the dir_config parameter.
+        Constructor from APP class to read the config file, generate the instances from modules
+        and declare global variables.
+        :param dir_config: path with the configuration file.
+        :param dir_face_map: path with the face mapper file.
+        :param dir_cube_saved: path with the data of the cube resolved.
         """
         # Reading the face map json file
         with open(dir_config) as f:

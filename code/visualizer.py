@@ -14,7 +14,7 @@ class Viz:
     def __init__(self, config: dict):
         """
         Constructor from Viz class to preconfigure the render methods.
-        :param config: Initialize configuration parameters
+        :param config: Initialize configuration parameters.
         """
         # Initialize configuration parameters
         self.config = config
@@ -34,6 +34,12 @@ class Viz:
                                         fontstyle='italic', color='grey')
 
     def render(self, cube, counter):
+        """
+        Renders the cube following the configuration parameters.
+        :param cube: data with the cube to render.
+        :param counter: number of moves to display in the render.
+        :return: None.
+        """
         if self.config['render_2d']:
             self.__render_2d(cube, counter)
         if self.config['render_3d']:
@@ -45,7 +51,7 @@ class Viz:
         Prints a 2D unwrapped render with the actual state of the passed cube variable.
         :param cube: Dataframe with the state of the cube.
         :param counter: number applied of moves.
-        :return: None
+        :return: None.
         """
         c = cube
         unwrap = f"""
@@ -100,9 +106,9 @@ class Viz:
     def __create_faces(self, gen_code: list, colors: list):
         """
         Generates the cube by assigning colors and plotting the geometry.
-        :param gen_code: order to create the coplanar surfaces
-        :param colors: list with the colors mapped
-        :return: None
+        :param gen_code: order to create the coplanar surfaces.
+        :param colors: list with the colors mapped.
+        :return: None.
         """
         face = []
         for x in range(0, 3):
@@ -114,12 +120,12 @@ class Viz:
         self.__plot_surface(face, colors)
 
     @staticmethod
-    def __gen_points(code: int, var: list):
+    def __gen_points(code: int, var: list) -> np.array:
         """
         Generates the points of each coplanar surface from an array of coordinates.
         :param code: code with the plane situation.
         :param var: coordinates to be defined.
-        :return: None.
+        :return: array with the coordinates of each point.
         """
         if code == 1:
             return np.array([[var[0], var[0]], [var[0] + 1, var[0] + 1]])
@@ -146,7 +152,7 @@ class Viz:
         """
         Render a 3D view of the cube from the given data.
         :param cube: dataframe with the data of the cube.
-        :param aux_text: number applied of moves .
+        :param aux_text: number of applied moves.
         :return: None.
         """
         for surface in self.surfaces:

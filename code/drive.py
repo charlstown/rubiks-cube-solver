@@ -40,7 +40,7 @@ class Drive:
 
     def random_move(self) -> str:
         """
-        This method generates a random move.
+        This method generates a random move string as input.
         :return: string with the random move generated.
         """
         moves = ['f', 'b', 'u', 'd', 'r', 'l']

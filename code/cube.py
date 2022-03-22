@@ -3,8 +3,13 @@ import json
 import pandas as pd
 
 class Cube:
-    """The cube class represents the rubik's cube"""
-    def __init__(self, config, data: dict):
+    """The cube class represents the rubik's cube model.
+    Methods:
+        - load
+        - restart
+        - save
+    """
+    def __init__(self, config: dict, data: dict):
         """
         Constructor method to generate the initial cube variables.
         :param data: loads the cube data from the json file with the latest saved state.
@@ -19,10 +24,10 @@ class Cube:
         """
         return self.dcube
 
-    def restart(self):
+    def restart(self) -> pd.DataFrame:
         """
-
-        :return:
+        Restart the cube by loading the solved data from the json file.
+        :return: the loaded data from the json file.
         """
         # Reading the config json file
         with open(self.path_cube_done) as f:
@@ -36,7 +41,7 @@ class Cube:
         """
         Saves the state of the cube in a json file.
         :param dcube: Dataframe with the data of the state of the cube.
-        :return: none
+        :return: None.
         """
         data = dcube.to_dict('list')
         with open('data/cube_saved.json', 'w') as f:
