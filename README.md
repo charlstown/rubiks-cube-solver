@@ -2,6 +2,8 @@
 
 [TOC]
 
+![RubiksCube](data/RubiksCube.png)
+
 ## 0. Description
 
 Rubiks Cube python model using object-oriented programming. The model provides a user interface to interact with the cube and a render engine to visualize its process.
