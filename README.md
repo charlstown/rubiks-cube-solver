@@ -80,7 +80,7 @@ Download the repository with the following files:
 - README.md
 - requirements.txt
 - Conduct.md
-- Help.md
+- Documentation.md
 - LICENSE.txt
 
 
