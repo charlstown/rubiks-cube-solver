@@ -14,10 +14,10 @@ from drive import Drive
 
 class App:
     """
-    Class of the APP acting as orchestrator calling other classes.
+    APP Class acting as an orchestrator calling other classes.
     Methods:
         - run
-        - __manual_move
+        - __auto_move
         - __interface
     """
 
@@ -82,7 +82,7 @@ class App:
         # Closing program
         print("[APP] Program closed")
 
-    def __manual_move(self, repetitions: int):
+    def __auto_move(self, repetitions: int):
         """
         This method generates the input number of random moves in the cube.
         :param repetitions: number of moves to repeat.
@@ -123,7 +123,7 @@ class App:
         elif inpt == 'x':
             msg = "[APP] Please select the number of random moves to apply:\n"
             moves = int(input(msg))
-            self.__manual_move(moves)
+            self.__auto_move(moves)
             return self.__interface()
         elif inpt != 'c' and not check:
             print(f"[APP] Sorry, the command {inpt} is not valid.")

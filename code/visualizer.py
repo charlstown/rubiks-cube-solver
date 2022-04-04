@@ -72,7 +72,7 @@ class Viz:
         print(f'{counter} moves')
         print(unwrap)
 
-    def __gen_colors(self, cube: pd.DataFrame):
+    def __gen_geometry(self, cube: pd.DataFrame):
         """
         Generates the geometry from the given cube parameter.
         :param cube: dataframe with the state of the cube.
@@ -158,7 +158,7 @@ class Viz:
         for surface in self.surfaces:
             surface.remove()
         self.surfaces = []
-        self.__gen_colors(cube)
+        self.__gen_geometry(cube)
 
         # Create axis
         axes = [3, 3, 3]

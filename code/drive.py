@@ -5,6 +5,9 @@ import re
 
 
 class Drive:
+    """
+    Class to map and applies moves to the cube.
+    """
     def __init__(self, face_map: dict):
         """
         Constructor from class drive to initialize and declare global variables.
@@ -52,7 +55,7 @@ class Drive:
     @staticmethod
     def __parser(text: str) -> list:
         """
-        This method converts the input the string to a sequence of moves.
+        This method converts the input string to a sequence of moves.
         :param text: input string with the sequence of moves.
         :return: parsed list with the sequence of moves.
         """
