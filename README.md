@@ -1,60 +1,128 @@
-# Rubiks Cube Project
+# Rubik's Cube
 
-## Code Structure
+[TOC]
 
-### Cube Class
+## 0. Description
 
-The cube class represents the rubik's cube.
+Rubiks Cube python model using object-oriented programming. The model provides a user interface to interact with the cube and a render engine to visualize its process.
 
-#### Naming convention
+## 1. Installation
 
-- W -> white
-- G -> green
-- O -> Orange
-- B -> Blue
-- R -> Red
-- Y -> Yellow
+### Installing python 3
 
-**Faces Reference**
+Make sure you have python 3.x.x installed in your computer. You can get the latest release from the official website: 
 
-```
-	| R |
-| B | W | G | Y |
-	| O |
-```
+https://www.python.org/downloads/
 
-**Face Parametrization**
+- Windows: https://www.python.org/downloads/windows/
+- Linux/UNIX: https://www.python.org/downloads/source/
+- Mac OS X: https://www.python.org/downloads/mac-osx/
 
-```
-         |R1|R2|R3|
-         |R4|R5|R6|
-         |R7|R8|R9|
-|B1|B2|B3|W1|W2|W3|G1|G2|G3|Y1|Y2|Y3|
-|B4|B5|B6|W4|W5|W6|G4|G5|G6|Y4|Y5|Y6|
-|B7|B8|B9|W7|W8|W9|G7|G8|G9|Y7|Y8|Y9|
-         |O1|O2|O3|
-         |O4|O5|O6|
-         |O7|O8|O9|
-```
 
-**Serialization Structure**
 
-```json
-{
-  "w": ["w1", "w2", "w3", "w4", "w5", "w6", "w7", "w8", "w9"],
-  "r": ["r1", "r2", "r3", "r4", "r5", "r6", "r7", "r8", "r9"],
-  "g": ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9"],
-  "o": ["o1", "o2", "o3", "o4", "o5", "o6", "o7", "o8", "o9"],
-  "b": ["b1", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9"],
-  "y": ["y1", "y2", "y3", "y4", "y5", "y6", "y7", "y8", "y9"]
-}
-```
+If you want to check your python version installed you can type the following codes in your computer:
 
-**Moves notation**
+- Windows:
 
-- t: Top side move 1 clockwise
-- f: Front side move 1 clockwise
-- d: Down side move 1 clockwise
-- r: Right side move 1 clockwise
-- l: Left side move 1 clockwise
-- b: Back side move 1 clockwise
+  1. WinKey + R
+
+  2. Type 'cmd'  and press ENTER
+
+  3. Type 'python3 --version' in the console and press ENTER
+
+     ```
+     python3 --version
+     output: Python 3.6.9
+     ```
+
+- Linux/UNIX:
+
+  1. Press CTRL + ALT + T
+
+  2. Type $ python3 --version and press ENTER
+
+     ```
+     $ python3 --version
+     output: Python 3.6.9
+     ```
+
+     
+
+- Mac OS X: 
+
+  1. Go to Applications/Utilities
+
+  2. Click Terminal
+
+  3. Type $ python3 --version and press ENTER
+
+     ```
+     $ python3 --version
+     output: Python 3.6.9
+     ```
+
+
+
+### Downloading the repository
+
+Download the repository with the following files:
+
+- code
+  - main.py
+  - cube.py
+  - drive.py
+  - visualizer.py
+- data
+  - config.json
+  - cube_done.json
+  - cube_saved.json
+  - face_map.json
+- README.md
+- requirements.txt
+- Conduct.md
+- Help.md
+- LICENSE.txt
+
+
+
+## 2. Usage
+
+Before continue make sure you have installed the libraries from the requirements.txt file.
+
+- Start up the program:
+
+  ```
+  $ python .\code\main.py
+  ```
+
+  *Output:*
+
+  ```
+  Initial args:
+  - config: data/config.json
+  - cube: data/cube_saved.json
+  - mapping: data/face_map.json
+  [APP] Initializing the Rubik's Cube
+  [APP] Rendering the latest saved state from the Cube:
+  Please insert a face to move (f, t, d, r, l, b) or type 'r' to reset or 'h' for help:
+  ```
+
+  
+
+##  3. Troubleshooting
+
+Plese open a new issue if you see the script is no working or any additional requirement is needed.
+
+## 4. Disclaimer
+
+This is a proof of concept of a Rubik's Cube model done in Python. This is intended for educational purpose only.
+
+Do not use this for any commercial nor redistribution purpose. Actually, the use of such tool might be allowed for private read-only use, as this is what happens when crawling Whatsapp, but not beyond. I do not take responsibility for any use of this tool.
+
+## 5. Help Wanted
+
+This repository does provide the required python version, you should install it by your own
+
+## 6. Other links
+
+To find more projects, resources, articles and more you can visit my site http://carlosgrande.me/
