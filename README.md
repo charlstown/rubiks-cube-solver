@@ -1,4 +1,4 @@
-# Rubik's Cube
+# Rubik's Cube Solver in Python
 
 [TOC]
 
