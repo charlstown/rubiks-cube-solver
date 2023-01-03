@@ -26,7 +26,7 @@ A python project to interact, render and solve a Rubik's cube using a variety of
 
 </br>
 
-*Repository url:* https://github.com/https://github.com/charlstown/rubiks-cube-solver
+*Repository url:* https://github.com/charlstown/rubiks-cube-solver
 
 ---
 
