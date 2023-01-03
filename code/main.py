@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# -----------------------------------------------------
+# Project: Rubiks Cube Solver
+# Author/s: Carlos Grande
+# -----------------------------------------------------
+# Date: 03/01/2023
+# License: MIT
+# Version: 0.1.0
+# Maintainer/s: Carlos Grande
+# Environment: rubiks-cube-solver
+# -----------------------------------------------------
+
 # Libraries
 import argparse
 import json

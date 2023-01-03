@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# -----------------------------------------------------
+# Project: rubiks-cube-solver
+# Author/s: Carlos Grande
+# Maintainer/s: Carlos Grande
+# -----------------------------------------------------
+
 # Libraries
 import pandas as pd
 import random

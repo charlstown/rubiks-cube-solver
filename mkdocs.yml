@@ -1,0 +1,62 @@
+site_name: 
+site_description: A Python archetype documentation to help developers to start developing a coding project.
+repo_url: https://github.com/charlstown/rubiks-cube-solver
+
+# Configuration
+# Theme
+theme:
+  name: material
+  logo: assets/logo_32.png
+  favicon: assets/logo_32.ico
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+  language: en
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: blueblue
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
+# Sorting menu pages
+nav:
+    - Home: 'index.md'
+    - User Guide:
+      - Getting Started: 'user-guide/getting-started.md'
+      - Set Up: 'user-guide/set-up.md'
+      - Usage: 'user-guide/usage.md'
+      - Help wanted: 'user-guide/help.md'
+    - Dev Guide:
+      - Contribute: 'dev-guide/contribute.md'
+      - CI CD: 'dev-guide/ci-cd.md'
+    - About:
+      - License: 'about/license.md'
+      - External links: 'about/external-links.md'
+      - Changelog: 'about/changelog.md'
+
+
+# Extensions
+markdown_extensions:
+  - admonition            # Block elements
+  - pymdownx.details      # Collapsible call-outs
+  - pymdownx.superfences  # Nested elements
+  - pymdownx.mark         # Hihlighting text
+  - attr_list             # To add buttons
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

@@ -1,5 +1,13 @@
-import time
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# -----------------------------------------------------
+# Project: rubiks-cube-solver
+# Author/s: Carlos Grande
+# Maintainer/s: Carlos Grande
+# -----------------------------------------------------
 
+# Libraries
+import time
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
