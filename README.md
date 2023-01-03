@@ -30,12 +30,12 @@ A python project to interact, render and solve a Rubik's cube using a variety of
 
 ---
 
-## 0. Description
+## 1. Description
 
 A python project to interact, render and solve a Rubik's cube using an object-oriented approach. It features an interactive 3D display where you can input your custom moves, as well as a solver to calculate the permutations needed to achieve a valid solution.
 
 
-## 1. Installation
+## 2. Installation
 
 ### Installing python 3
 
@@ -114,7 +114,7 @@ Download the repository with the following files:
 
 
 
-## 2. Usage
+## 3. Usage
 
 Before continue make sure you have installed the libraries from the requirements.txt file.
 
@@ -138,20 +138,20 @@ Before continue make sure you have installed the libraries from the requirements
 
   
 
-##  3. Troubleshooting
+##  4. Troubleshooting
 
 Plese open a new issue if you see the script is no working or any additional requirement is needed.
 
-## 4. Disclaimer
+## 5. Disclaimer
 
 This is a proof of concept of a Rubik's Cube model done in Python. This is intended for educational purpose only.
 
 Do not use this for any commercial nor redistribution purpose. Actually, the use of such tool might be allowed for private read-only use, as this is what happens when crawling Whatsapp, but not beyond. I do not take responsibility for any use of this tool.
 
-## 5. Help Wanted
+## 6. Help Wanted
 
 This repository does provide the required python version, you should install it by your own
 
-## 6. Other links
+## 7. Other links
 
 To find more projects, resources, articles and more you can visit my site http://carlosgrande.me/
