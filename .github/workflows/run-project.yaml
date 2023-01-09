@@ -22,4 +22,4 @@ jobs: # Jobs to run
       run: | # Commands to create the cookiecutter template and run the project
         git clone https://github.com/charlstown/rubiks-cube-solver
         cd rubiks-cube-solver
-        python src/rubiks_cube_solver/main.py -l debug
+        python rubiks_cube_solver/main.py -l debug

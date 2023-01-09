@@ -31,7 +31,9 @@ class Viz:
         # Initialize visualization parameters
         plt.ion()
         self.surfaces = []
-        self.fig = plt.figure()
+        dpi = 1/plt.rcParams['figure.dpi']
+        w, h = config['plot_width_px'], config['plot_height_px']
+        self.fig = plt.figure(figsize=(w*dpi, h*dpi))
 
         # Creating the axes
         self.ax = self.fig.add_subplot(111, projection='3d')

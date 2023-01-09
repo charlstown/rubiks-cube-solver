@@ -5,6 +5,8 @@ path_logs: data/logs/file.log
 # Cube settings
 render_3d: true
 render_2d: false
+plot_width_px: 1000
+plot_height_px: 800
 path_cube_done: data/cube_done.json
 path_cube_saved: data/cube_saved.json
 path_face_map: data/face_map.json
@@ -43,9 +45,10 @@ window_moves: # key: face
 
 # Help window
 window_help: |
-  5 > Moves the front face (white color)
-  8 > Moves the up face (red color)
-  2 > Moves the down face (orange color)
-  6 > Moves the right face (green color)
-  4 > Moves the left face (blue color)
-  0 > Moves the back face (yellow color)
+  5 -> Moves the front face (white color)
+  8 -> Moves the up face (red color)
+  2 -> Moves the down face (orange color)
+  6 -> Moves the right face (green color)
+  4 -> Moves the left face (blue color)
+  0 -> Moves the back face (yellow color)
+  q -> Exit the program
