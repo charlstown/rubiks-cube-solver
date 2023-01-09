@@ -17,9 +17,7 @@ jobs: # Jobs to run
       run: | # Commands to install requirements and cookiecutter
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
-        pip install cookiecutter
     - name: Run main.py  # Step to run the script
-      run: | # Commands to create the cookiecutter template and run the project
-        git clone https://github.com/charlstown/rubiks-cube-solver
+      run: | # Commands to run the project
         cd rubiks-cube-solver
         python rubiks_cube_solver/main.py -l debug
