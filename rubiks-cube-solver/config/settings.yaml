@@ -9,8 +9,8 @@ path_cube_done: data/cube_done.json
 path_cube_saved: data/cube_saved.json
 path_face_map: data/face_map.json
 
-# This settings map the keyboard with the color of the face
-moves_map:  # key: color
+# This settings map the face with the color of the face
+console_moves:  # face: color
   f: w      # Moves the front face (white color)
   u: r      # Moves the up face (red color)
   d: o      # Moves the down face (orange color)
@@ -19,7 +19,7 @@ moves_map:  # key: color
   b: y      # Moves the back face (yellow color)
 
 # Help message
-help_message: |
+console_help: |
     Valid commands:
     - u{N}: Up side move N clockwise.
     - f{N}: Front side move N clockwise.
@@ -31,3 +31,21 @@ help_message: |
     - h: show the help.
     - s: solve the cube.
     - c: close the app.
+
+# This settings map the keyboard command with the face name
+window_moves: # key: face
+  '5': f          # Moves the front face (white color)
+  '8': u          # Moves the up face (red color)
+  '2': d          # Moves the down face (orange color)
+  '6': r          # Moves the right face (green color)
+  '4': l          # Moves the left face (blue color)
+  '0': b          # Moves the back face (yellow color)
+
+# Help window
+window_help: |
+  5 > Moves the front face (white color)
+  8 > Moves the up face (red color)
+  2 > Moves the down face (orange color)
+  6 > Moves the right face (green color)
+  4 > Moves the left face (blue color)
+  0 > Moves the back face (yellow color)

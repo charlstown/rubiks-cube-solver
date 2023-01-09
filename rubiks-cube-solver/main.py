@@ -18,11 +18,14 @@ import sys
 import argparse
 import json
 import yaml
+from io import StringIO
+import subprocess
 
 # Classes
 from cube import Cube
 from visualizer import Viz
 from drive import Drive
+from pop_up import PopUp
 
 
 class App:
@@ -31,7 +34,7 @@ class App:
     Methods:
         - run
         - __auto_move
-        - __interface
+        - _interface
     """
 
     def __init__(self, args: argparse.Namespace):
@@ -72,10 +75,12 @@ class App:
         self.cube = Cube(self.config, self.data)
         self.viz = Viz(self.config)
         self.drive = Drive(self.config, face_map)
+        self.popup = PopUp(self.config)
 
         # Variables
         self.log = logger
-        self.help = self.config['help_message']
+        self.time_start = time.time()
+        self.console_help = self.config['console_help']
         self.dcube = self.cube.load()
         self.moves_counter = 0
 
@@ -115,27 +120,63 @@ class App:
         :return: None
         """
         # Initializing the app
-        start_app = time.time()
+        self.time_start = time.time()
         self.log.info(f"\033[1m[Initializing {self.config['project_name']}]\033[0m")
+
+        # Connecting events to interface
+        self.viz.connect_events_to_interface(self._on_press_event)
 
         # Rendering latest state
         self.log.debug("Rendering the latest saved state from the Cube:")
         self.viz.render(self.dcube, self.moves_counter)
 
         # Starting the communication interface
-        self.__interface()
+        self._interface()
 
-        # Saving the cube
+        # Exiting the app
+        self._exit_app()
+
+    def _exit_app(self):
+        """
+        This method close the program
+        """
+        # Save the state of the cube
         self.cube.save(self.dcube)
         self.log.debug("Rubik\'s cube successfully saved")
 
-        # Exiting the app
+        # Exit the app
         end_app = time.time()
-        elapsed_time = end_app - start_app
+        elapsed_time = end_app - self.time_start
         str_elapsed_time = time.strftime('%H:%M:%S.', time.gmtime(elapsed_time))
         self.log.info(f"\033[1m[Exiting {self.config['project_name']} app."
                       f"Total elapsed time: {str_elapsed_time}]\033[0m")
         sys.exit(0)
+
+    def _on_press_event(self, event):
+        cmds = self.config['window_moves']
+        moves = list(cmds.keys())
+
+        # Check for moves
+        if event.key in moves:
+            self.dcube = self.drive.move(self.dcube, f'{cmds[event.key]}1')
+            self.log.debug("The Cube was updated.")
+            self.moves_counter += 1
+            self.viz.render(self.dcube, self.moves_counter)
+
+        # Check for reset
+        if event.key == 'r':
+            self.dcube = self.cube.restart()
+            self.moves_counter = 0
+            self.viz.render(self.dcube, self.moves_counter)
+            self.log.info(f'Cube was restarted after {self.moves_counter} moves.')
+
+        # Check for help
+        if event.key == 'h':
+            self.viz.show_help()
+
+        # Check for close program
+        if event.key == 'q':
+            self._exit_app()
 
     def __auto_move(self, repetitions: int):
         """
@@ -150,42 +191,43 @@ class App:
             self.moves_counter += 1
             # time.sleep(1)
 
-    def __interface(self):
+    def _interface(self):
         """
         This method acts as a front-end to input the commands and interact with the cube.
         :return: None.
         """
-        moves = str(list(self.config['moves_map'].keys()))[1:-1]
-        intro = f"""Type a face to move ({moves}), 'r' to reset, 'h' for help or c to close:\n"""
+        moves = str(list(self.config['console_moves'].keys()))[1:-1]
+        intro = f"""Type a move sequence ({moves}), 'r' to reset, 'h' for help or q to quit:\n"""
         inpt = input(intro)
         check = self.drive.check_for_moves(inpt)
 
         # Input commands
         if inpt != 'c' and check:
             self.dcube = self.drive.move(self.dcube, inpt)
-            print("[APP] The Cube was updated:")
+            print("[APP] The Cube was updated")
             self.moves_counter += 1
             self.viz.render(self.dcube, self.moves_counter)
-            return self.__interface()
+            return self._interface()
         elif inpt == 'h':
-            print(self.help)
-            return self.__interface()
+            print(self.console_help)
+            return self._interface()
         elif inpt == 'r':
             self.dcube = self.cube.restart()
             self.moves_counter = 0
             self.viz.render(self.dcube, self.moves_counter)
             print(f'[APP] Cube was restarted after {self.moves_counter} moves.')
-            return self.__interface()
+            return self._interface()
         elif inpt == 'x':
             msg = "[APP] Please select the number of random moves to apply:\n"
             moves = int(input(msg))
             self.__auto_move(moves)
-            return self.__interface()
-        elif inpt != 'c' and not check:
+            return self._interface()
+        elif inpt != 'q' and not check:
             print(f"[APP] Sorry, the command {inpt} is not valid.")
-            return self.__interface()
-        elif inpt == 'c':
-            print('[APP] Closing the app.')
+            return self._interface()
+        elif inpt == 'q':
+            self.log.info('[APP] Quiting the app.')
+            self._exit_app()
 
 
 # Starting the app when main

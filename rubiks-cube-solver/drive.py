@@ -22,7 +22,7 @@ class Drive:
         :param face_map: dictionary with the mapping of faces to move.
         """
         self.dcube = None
-        self.moves = config['moves_map']
+        self.moves = config['console_moves']
         self.face_map = face_map
 
     def check_for_moves(self, input_move: str) -> bool:

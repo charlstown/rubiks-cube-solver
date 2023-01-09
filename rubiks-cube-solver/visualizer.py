@@ -7,8 +7,8 @@
 # -----------------------------------------------------
 
 # Libraries
-import time
 import matplotlib
+import sys
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -26,20 +26,42 @@ class Viz:
         """
         # Initialize configuration parameters
         self.config = config
+        self.window_help = self.config['window_help']
 
         # Initialize visualization parameters
         plt.ion()
         self.surfaces = []
         self.fig = plt.figure()
+
+        # Creating the axes
         self.ax = self.fig.add_subplot(111, projection='3d')
+
+        # Configuring the axes
         self.ax.view_init(elev=30, azim=45)
+        plt.grid(False)
+        plt.axis('off')
+
+        # Adding title
         plt.title(label="My Rubik's Cube",
                   loc="center",
                   fontstyle='normal')
-        plt.suptitle('Click on the cube to orbit.',
-                     fontstyle='italic')
-        self.txt_moves = self.ax.text2D(0.05, 0.95, '0 moves', transform=self.ax.transAxes,
+
+        # Creating text labels
+        props = dict(boxstyle='round', facecolor='#89B5C8', alpha=0.25)
+        self.txt_moves = self.ax.text2D(0, 0.95, '0 moves', transform=self.ax.transAxes,
                                         fontstyle='italic', color='grey')
+        self.ax.text2D(1, 0.95, "Press 'h' to show help", ha='right',
+                                        transform=self.ax.transAxes, fontstyle='italic', color='grey')
+
+        # Creating help window
+        self.help_window = False
+        self.txt_help = self.ax.text2D(0, 0, '', transform=self.ax.transAxes,
+                                        ha='left', va='center',
+                                            fontstyle='italic', color='#153543', bbox=props, zorder=10)
+
+    def connect_events_to_interface(self, driver):
+        self.fig.canvas.mpl_connect('key_press_event', driver)
+
 
     def render(self, cube, counter):
         """
@@ -153,7 +175,7 @@ class Viz:
             self.surfaces.append(self.ax.plot_surface(points[0], points[1], points[2],
                                                       color=color,
                                                       linewidth=0.5,
-                                                      edgecolors='black'))
+                                                      edgecolors='black', zorder=1))
         return self.surfaces
 
     def __render_3d(self, cube: pd.DataFrame, aux_text=0):
@@ -175,10 +197,17 @@ class Viz:
         data = np.ones(axes, dtype=bool)
         self.fig.canvas.manager.set_window_title('My Rubiks Cube')
 
-        # Text box
-        self.txt_moves.remove()
-        self.txt_moves = self.ax.text2D(0.05, 0.95, f'{aux_text} moves', transform=self.ax.transAxes,
-                                        fontstyle='italic', color='grey')
+        # Update moves label
+        self.txt_moves.set_text(f'{aux_text} moves')
+
         # Plot figure
         self.fig.canvas.draw()
         self.fig.canvas.flush_events()
+
+    def show_help(self):
+        self.help_window = not self.help_window
+        if self.help_window:
+            self.txt_help.set_text(self.window_help)
+            # self.fig.canvas.draw()
+        else:
+            self.txt_help.set_text('')
