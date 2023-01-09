@@ -14,10 +14,10 @@ jobs: # Jobs to run
       with:
         python-version: '3.10' # Python version
     - name: Install dependencies # Step to install dependencies
-      run: | # Commands to install requirements and cookiecutter
+      run: | # Commands to install requirements
         python -m pip install --upgrade pip
         python -m pip install -r requirements.txt
     - name: Run main.py  # Step to run the script
       run: | # Commands to run the project
-        cd rubiks-cube-solver
+        ls
         python rubiks_cube_solver/main.py -l debug
