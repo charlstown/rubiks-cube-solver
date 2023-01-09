@@ -234,7 +234,7 @@ class App:
 if __name__ == "__main__":
     # Initialize the argument parser
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", "-c", default="rubiks-cube-solver/config/settings.yaml",
+    parser.add_argument("--config", "-c", default="rubiks_cube_solver/config/settings.yaml",
                         help="Add the config file path after this flag")
     parser.add_argument("--cube", "-cb", default="data/cube_saved.json",
                         help="Add the config file path after this flag")
