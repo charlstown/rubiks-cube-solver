@@ -20,4 +20,3 @@ jobs: # Jobs to run
     - name: Run main.py  # Step to run the script
       run: | # Commands to run the project
         python rubiks_cube_solver/main.py -l debug
-        "q\n"

@@ -99,10 +99,10 @@ class App:
         # Setting up the logger
         set_log_format = '%(asctime)s [%(levelname)s] %(filename)s - %(funcName)s (L%(lineno)s): %(message)s'
         set_date_format = '%Y-%m-%d %H:%M:%S'
-        logging.basicConfig(level=set_level,
-                            format=set_log_format,
+        logging.basicConfig(format=set_log_format,
                             datefmt=set_date_format)
         my_logger = logging.getLogger(__name__)
+        my_logger.setLevel(set_level)
 
         # Create a file log handler
         file_handler = logging.FileHandler(self.config['path_logs'])
@@ -166,9 +166,9 @@ class App:
         # Check for reset
         if event.key == 'r':
             self.dcube = self.cube.restart()
-            self.moves_counter = 0
-            self.viz.render(self.dcube, self.moves_counter)
+            self.viz.render(self.dcube, 0)
             self.log.info(f'Cube was restarted after {self.moves_counter} moves.')
+            self.moves_counter = 0
 
         # Check for help
         if event.key == 'h':
