@@ -1,0 +1,33 @@
+# General settings
+project_name: "rubiks-cube-solver"
+path_logs: data/logs/file.log
+
+# Cube settings
+render_3d: true
+render_2d: false
+path_cube_done: data/cube_done.json
+path_cube_saved: data/cube_saved.json
+path_face_map: data/face_map.json
+
+# This settings map the keyboard with the color of the face
+moves_map:  # key: color
+  f: w      # Moves the front face (white color)
+  u: r      # Moves the up face (red color)
+  d: o      # Moves the down face (orange color)
+  r: g      # Moves the right face (green color)
+  l: b      # Moves the left face (blue color)
+  b: y      # Moves the back face (yellow color)
+
+# Help message
+help_message: |
+    Valid commands:
+    - u{N}: Up side move N clockwise.
+    - f{N}: Front side move N clockwise.
+    - d{N}: Down side move N clockwise.
+    - r{N}: Right side move N clockwise.
+    - l{N}: Left side move N clockwise.
+    - b{N}: Back side move N clockwise.
+    - x: Randon moves.
+    - h: show the help.
+    - s: solve the cube.
+    - c: close the app.

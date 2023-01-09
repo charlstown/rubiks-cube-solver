@@ -16,22 +16,23 @@ class Drive:
     """
     Class to map and applies moves to the cube.
     """
-    def __init__(self, face_map: dict):
+    def __init__(self, config: dict, face_map: dict):
         """
         Constructor from class drive to initialize and declare global variables.
         :param face_map: dictionary with the mapping of faces to move.
         """
         self.dcube = None
+        self.moves = config['moves_map']
         self.face_map = face_map
 
-    @staticmethod
-    def check_for_moves(input_move: str) -> bool:
+    def check_for_moves(self, input_move: str) -> bool:
         """
         This method checks if the input move is a valid move.
         :param input_move: parameter passed by the user with the move.
         :return: boolean response if it's a valid or invalid move.
         """
-        if bool(re.search("^([ftdlrb][\\d])+$", input_move)):
+        keys = ''.join(list(self.moves.keys()))
+        if bool(re.search(f"^([{keys}][\\d])+$", input_move)):
             return True
         else:
             return False
@@ -54,8 +55,7 @@ class Drive:
         This method generates a random move string as input.
         :return: string with the random move generated.
         """
-        moves = ['f', 'b', 'u', 'd', 'r', 'l']
-        rand_move = str(moves[random.randint(0, 5)])
+        rand_move = str(list(self.moves.keys())[random.randint(0, 5)])
         rand_int = str(random.randint(1, 4))
         return rand_move + rand_int
 
@@ -76,24 +76,10 @@ class Drive:
         :param move: string with the passed move.
         :return: None
         """
-        if move[0] == 'f':
-            for i in range(int(move[1])):
-                self.__move_face('w')
-        elif move[0] == 't':
-            for i in range(int(move[1])):
-                self.__move_face('r')
-        elif move[0] == 'd':
-            for i in range(int(move[1])):
-                self.__move_face('o')
-        elif move[0] == 'l':
-            for i in range(int(move[1])):
-                self.__move_face('b')
-        elif move[0] == 'r':
-            for i in range(int(move[1])):
-                self.__move_face('g')
-        elif move[0] == 'b':
-            for i in range(int(move[1])):
-                self.__move_face('y')
+        for key, color in self.moves.items():
+            if move[0] == key:
+                for i in range(int(move[1])):
+                    self.__move_face(color)
 
     def __move_face(self, face: str):
         """

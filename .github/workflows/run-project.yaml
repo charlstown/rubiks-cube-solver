@@ -1,0 +1,25 @@
+# Action to run the project and test it.
+name: On Push Run Project # Workflow name
+
+on: push # Trigger
+
+jobs: # Jobs to run
+  deploy:
+    name: run-project  # Name of the job
+    runs-on: ubuntu-latest  # Operating system to run the job on
+    steps:  # Steps to run
+    - uses: actions/checkout@v2 # Action to run
+    - name: Set up Python # Name of the step
+      uses: actions/setup-python@v4.3.0  # Action to run
+      with:
+        python-version: '3.10' # Python version
+    - name: Install dependencies # Step to install dependencies
+      run: | # Commands to install requirements and cookiecutter
+        python -m pip install --upgrade pip
+        python -m pip install -r requirements.txt
+        pip install cookiecutter
+    - name: Run main.py  # Step to run the script
+      run: | # Commands to create the cookiecutter template and run the project
+        git clone https://github.com/charlstown/rubiks-cube-solver
+        cd rubiks-cube-solver
+        python src/rubiks_cube_solver/main.py -l debug

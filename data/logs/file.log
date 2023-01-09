@@ -1,0 +1,110 @@
+2023-01-04 12:28:21,239 [DEBUG] main.py - __init__ (L59): 
+2023-01-04 12:28:21,239 [DEBUG] main.py - __init__ (L60): Initial args: 
+2023-01-04 12:28:21,239 [DEBUG] main.py - __init__ (L62): >> config: rubiks-cube-solver/config/settings.yaml
+2023-01-04 12:28:21,239 [DEBUG] main.py - __init__ (L62): >> cube: data/cube_saved.json
+2023-01-04 12:28:21,240 [DEBUG] main.py - __init__ (L62): >> mapping: data/face_map.json
+2023-01-04 12:28:21,240 [DEBUG] main.py - __init__ (L62): >> log: ['debug']
+2023-01-04 12:28:21,240 [DEBUG] main.py - __init__ (L63): 
+
+2023-01-04 12:28:21,742 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-04 12:28:21,742 [DEBUG] main.py - run (L132): Rendering the latest saved state from the Cube:
+2023-01-08 12:51:31,812 [DEBUG] main.py - __init__ (L59): 
+2023-01-08 12:51:31,813 [DEBUG] main.py - __init__ (L60): Initial args: 
+2023-01-08 12:51:31,813 [DEBUG] main.py - __init__ (L62): >> config: rubiks-cube-solver/config/settings.yaml
+2023-01-08 12:51:31,813 [DEBUG] main.py - __init__ (L62): >> cube: data/cube_saved.json
+2023-01-08 12:51:31,813 [DEBUG] main.py - __init__ (L62): >> mapping: data/face_map.json
+2023-01-08 12:51:31,813 [DEBUG] main.py - __init__ (L62): >> log: ['debug']
+2023-01-08 12:51:31,813 [DEBUG] main.py - __init__ (L63): 
+
+2023-01-08 12:51:32,163 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 12:51:32,164 [DEBUG] main.py - run (L132): Rendering the latest saved state from the Cube:
+2023-01-08 12:56:36,027 [DEBUG] main.py - __init__ (L59): 
+2023-01-08 12:56:36,027 [DEBUG] main.py - __init__ (L60): Initial args: 
+2023-01-08 12:56:36,027 [DEBUG] main.py - __init__ (L62): >> config: rubiks-cube-solver/config/settings.yaml
+2023-01-08 12:56:36,028 [DEBUG] main.py - __init__ (L62): >> cube: data/cube_saved.json
+2023-01-08 12:56:36,028 [DEBUG] main.py - __init__ (L62): >> mapping: data/face_map.json
+2023-01-08 12:56:36,028 [DEBUG] main.py - __init__ (L62): >> log: ['debug']
+2023-01-08 12:56:36,028 [DEBUG] main.py - __init__ (L63): 
+
+2023-01-08 12:56:36,400 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 12:56:36,400 [DEBUG] main.py - run (L132): Rendering the latest saved state from the Cube:
+2023-01-08 12:57:09,283 [DEBUG] main.py - __init__ (L59): 
+2023-01-08 12:57:09,283 [DEBUG] main.py - __init__ (L60): Initial args: 
+2023-01-08 12:57:09,283 [DEBUG] main.py - __init__ (L62): >> config: rubiks-cube-solver/config/settings.yaml
+2023-01-08 12:57:09,284 [DEBUG] main.py - __init__ (L62): >> cube: data/cube_saved.json
+2023-01-08 12:57:09,284 [DEBUG] main.py - __init__ (L62): >> mapping: data/face_map.json
+2023-01-08 12:57:09,284 [DEBUG] main.py - __init__ (L62): >> log: ['debug']
+2023-01-08 12:57:09,284 [DEBUG] main.py - __init__ (L63): 
+
+2023-01-08 12:57:09,657 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 12:57:09,657 [DEBUG] main.py - run (L132): Rendering the latest saved state from the Cube:
+2023-01-08 12:57:44,480 [DEBUG] main.py - __init__ (L59): 
+2023-01-08 12:57:44,480 [DEBUG] main.py - __init__ (L60): Initial args: 
+2023-01-08 12:57:44,481 [DEBUG] main.py - __init__ (L62): >> config: rubiks-cube-solver/config/settings.yaml
+2023-01-08 12:57:44,481 [DEBUG] main.py - __init__ (L62): >> cube: data/cube_saved.json
+2023-01-08 12:57:44,481 [DEBUG] main.py - __init__ (L62): >> mapping: data/face_map.json
+2023-01-08 12:57:44,481 [DEBUG] main.py - __init__ (L62): >> log: ['debug']
+2023-01-08 12:57:44,481 [DEBUG] main.py - __init__ (L63): 
+
+2023-01-08 12:57:44,854 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 12:57:44,855 [DEBUG] main.py - run (L132): Rendering the latest saved state from the Cube:
+2023-01-08 13:03:06,670 [DEBUG] main.py - __init__ (L59): 
+2023-01-08 13:03:06,670 [DEBUG] main.py - __init__ (L60): Initial args: 
+2023-01-08 13:03:06,670 [DEBUG] main.py - __init__ (L62): >> config: rubiks-cube-solver/config/settings.yaml
+2023-01-08 13:03:06,670 [DEBUG] main.py - __init__ (L62): >> cube: data/cube_saved.json
+2023-01-08 13:03:06,670 [DEBUG] main.py - __init__ (L62): >> mapping: data/face_map.json
+2023-01-08 13:03:06,671 [DEBUG] main.py - __init__ (L62): >> log: ['debug']
+2023-01-08 13:03:06,671 [DEBUG] main.py - __init__ (L63): 
+
+2023-01-08 13:03:07,045 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:03:07,046 [DEBUG] main.py - run (L132): Rendering the latest saved state from the Cube:
+2023-01-08 13:03:39,355 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:07:05,882 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:07:14,802 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:09:32,777 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:10:08,882 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:10:25,987 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:11:11,489 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:11:19,821 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:11:25,187 [INFO] main.py - run (L146): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:05.][0m
+2023-01-08 13:11:49,133 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:11:55,899 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 13:12:25,915 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:37:21,681 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:37:28,344 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:38:05,363 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:38:52,622 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:39:09,285 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:40:10,113 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:40:40,829 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:41:13,737 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:41:41,734 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-08 15:42:12,428 [INFO] main.py - run (L146): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:30.][0m
+2023-01-09 11:04:53,403 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:13:58,431 [INFO] main.py - run (L129): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:16:19,395 [INFO] main.py - run (L146): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:02:20.][0m
+2023-01-09 11:20:03,616 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:22:09,062 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:23:53,767 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:24:15,600 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:25:53,521 [INFO] main.py - run (L136): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:01:37.][0m
+2023-01-09 11:25:56,821 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:26:07,707 [INFO] main.py - run (L136): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:10.][0m
+2023-01-09 11:26:20,490 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:26:40,183 [INFO] main.py - run (L136): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:19.][0m
+2023-01-09 11:26:42,934 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:27:24,503 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:27:32,186 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:27:51,484 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:28:01,540 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:29:01,015 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:29:49,365 [INFO] main.py - run (L136): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:48.][0m
+2023-01-09 11:29:52,110 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:32:25,939 [INFO] main.py - run (L136): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:02:33.][0m
+2023-01-09 11:32:29,267 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:33:37,639 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:34:04,591 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:34:36,697 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:35:52,850 [INFO] main.py - run (L136): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:01:16.][0m
+2023-01-09 11:35:55,693 [INFO] main.py - run (L119): [1m[Initializing rubiks-cube-solver][0m
+2023-01-09 11:36:45,171 [INFO] main.py - run (L136): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:49.][0m
