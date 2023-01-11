@@ -12,13 +12,13 @@ import random
 import re
 
 
-class Drive:
+class Worker:
     """
     Class to map and applies moves to the cube.
     """
     def __init__(self, config: dict, face_map: dict):
         """
-        Constructor from class drive to initialize and declare global variables.
+        Constructor from class Worker to initialize and declare global variables.
         :param face_map: dictionary with the mapping of faces to move.
         """
         self.dcube = None

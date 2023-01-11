@@ -1,0 +1,640 @@
+2023-01-11 19:08:11,313 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 19:08:11,313 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 19:08:11,313 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 19:08:11,313 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 19:08:11,313 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 19:08:11,313 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 19:08:11,313 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 19:08:11,652 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 19:08:11,653 [DEBUG] main.py - run (L130): Rendering the latest saved state from the Cube:
+2023-01-11 19:08:58,286 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 19:08:58,287 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 19:08:58,287 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 19:08:58,287 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 19:08:58,287 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 19:08:58,287 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 19:08:58,288 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 19:08:58,603 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 19:08:58,604 [DEBUG] main.py - run (L130): Rendering the latest saved state from the Cube:
+2023-01-11 19:09:24,328 [DEBUG] main.py - _exit_app (L145): Rubik's cube successfully saved
+2023-01-11 19:09:24,328 [INFO] main.py - _exit_app (L151): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:25.][0m
+2023-01-11 19:09:27,978 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 19:09:27,978 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 19:09:27,978 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 19:09:27,978 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 19:09:27,978 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 19:09:27,979 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 19:09:27,979 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 19:09:28,311 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 19:09:28,312 [DEBUG] main.py - run (L130): Rendering the latest saved state from the Cube:
+2023-01-11 19:10:02,354 [DEBUG] main.py - _exit_app (L145): Rubik's cube successfully saved
+2023-01-11 19:10:02,354 [INFO] main.py - _exit_app (L151): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:34.][0m
+2023-01-11 19:10:11,711 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 19:10:11,712 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 19:10:11,712 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 19:10:11,712 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 19:10:11,712 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 19:10:11,712 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 19:10:11,713 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 19:10:12,055 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 19:10:12,056 [DEBUG] main.py - run (L130): Rendering the latest saved state from the Cube:
+2023-01-11 19:10:17,039 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:17,264 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:17,585 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:17,804 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:18,024 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:18,218 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:18,519 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:18,736 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:18,953 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:19,107 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:19,328 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:19,524 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:19,767 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:19,942 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:20,167 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:20,447 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:20,704 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:20,937 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:21,169 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:21,407 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:21,640 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:21,927 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:22,164 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:22,397 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:22,627 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:22,875 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:23,099 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:23,335 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:23,824 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:24,082 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:24,290 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:24,519 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:10:24,725 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:11:45,512 [INFO] main.py - _on_press_event (L170): Cube was restarted after 33 moves.
+2023-01-11 19:12:22,526 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:23,219 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:23,496 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:23,740 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:24,031 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:24,297 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:24,576 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:24,747 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:24,972 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:25,116 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:25,358 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:25,569 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:12:26,375 [INFO] main.py - _on_press_event (L170): Cube was restarted after 35 moves.
+2023-01-11 19:12:41,547 [DEBUG] main.py - _exit_app (L145): Rubik's cube successfully saved
+2023-01-11 19:12:41,547 [INFO] main.py - _exit_app (L151): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:02:29.][0m
+2023-01-11 19:24:49,101 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 19:24:49,101 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 19:24:49,101 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 19:24:49,101 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 19:24:49,102 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 19:24:49,102 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 19:24:49,102 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 19:24:49,427 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 19:24:49,427 [DEBUG] main.py - run (L130): Rendering the latest saved state from the Cube:
+2023-01-11 19:24:50,529 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:50,773 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:51,197 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:51,541 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:52,010 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:52,274 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:52,520 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:52,764 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:52,985 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:53,205 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:53,573 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:53,792 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:54,038 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:54,231 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:54,440 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:54,980 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:55,220 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:55,458 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:55,686 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:55,945 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:56,207 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:56,433 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:56,655 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:56,849 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:57,043 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:57,327 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:57,548 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:57,768 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:58,023 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:58,263 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:59,380 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:59,625 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:24:59,891 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:00,108 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:00,289 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:00,517 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:00,770 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:00,986 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:01,203 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:01,443 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:01,698 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:01,947 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:02,175 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:02,408 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:02,641 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:02,882 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:03,111 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:03,333 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:03,605 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:03,822 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:04,067 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:04,298 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:06,427 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:06,693 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:06,960 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:07,205 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:07,393 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:07,619 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:07,853 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:08,068 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:08,280 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:08,488 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:08,768 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:09,004 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:09,234 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:09,481 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:09,712 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:09,946 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:10,171 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:10,416 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:10,627 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:10,859 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:11,090 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:11,380 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:11,630 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:11,844 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:12,067 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:12,287 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:12,543 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:12,750 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:12,971 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:13,134 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:13,358 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:13,609 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:13,847 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:14,082 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:14,294 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:14,525 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:14,746 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:14,954 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:15,159 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:15,412 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:15,673 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:15,891 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:16,127 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:16,337 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:16,584 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:16,803 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:17,041 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:17,273 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:17,449 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:17,669 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:17,861 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:18,078 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:18,301 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:18,531 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:18,759 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:19,015 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:19,262 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:19,505 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:19,745 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:19,998 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:20,245 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:20,483 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:20,730 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:20,934 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:21,162 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:21,368 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:21,633 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:21,836 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:22,067 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:22,292 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:22,489 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:22,712 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:22,962 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:23,163 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:23,327 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:23,543 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:23,788 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:23,947 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:24,174 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:24,415 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:24,635 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:24,822 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:25,075 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:25,315 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:25,574 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:25,759 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:25,980 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:26,207 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:26,374 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:26,591 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:26,835 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:27,062 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:27,229 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:27,453 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:27,677 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:27,931 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:28,169 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:28,457 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:28,670 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:28,899 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:29,119 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:29,340 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:29,560 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:29,777 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:30,009 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:30,237 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:30,480 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:30,712 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:30,952 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:31,153 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:31,357 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:31,597 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:31,812 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:32,057 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:32,250 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:32,496 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:32,745 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:32,974 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:33,141 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:33,342 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:33,578 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:34,043 [INFO] main.py - _on_press_event (L170): Cube was restarted after 173 moves.
+2023-01-11 19:25:46,452 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:46,607 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:46,874 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:47,119 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:47,354 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:47,601 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:47,842 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:47,991 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:48,201 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:48,422 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:48,643 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:48,786 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:49,015 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:49,237 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:49,475 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:49,691 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:49,912 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:50,131 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:50,334 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:50,549 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:50,762 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:50,992 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:51,233 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:51,374 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:51,585 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:51,813 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:52,004 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:52,229 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:52,470 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:52,718 [DEBUG] main.py - _on_press_event (L162): The Cube was updated.
+2023-01-11 19:25:53,147 [INFO] main.py - _on_press_event (L170): Cube was restarted after 30 moves.
+2023-01-11 19:26:00,649 [DEBUG] main.py - _exit_app (L145): Rubik's cube successfully saved
+2023-01-11 19:26:00,649 [INFO] main.py - _exit_app (L151): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:01:11.][0m
+2023-01-11 19:52:18,309 [DEBUG] main.py - __init__ (L61): 
+2023-01-11 19:52:18,309 [DEBUG] main.py - __init__ (L62): Initial args: 
+2023-01-11 19:52:18,309 [DEBUG] main.py - __init__ (L64): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 19:52:18,310 [DEBUG] main.py - __init__ (L64): >> cube: data/cube_saved.json
+2023-01-11 19:52:18,310 [DEBUG] main.py - __init__ (L64): >> mapping: data/face_map.json
+2023-01-11 19:52:18,310 [DEBUG] main.py - __init__ (L64): >> log: ['debug']
+2023-01-11 19:52:18,310 [DEBUG] main.py - __init__ (L65): 
+
+2023-01-11 19:52:18,638 [INFO] main.py - run (L123): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 19:52:18,640 [DEBUG] main.py - run (L129): Rendering the latest saved state from the Cube:
+2023-01-11 19:52:21,414 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:21,657 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:21,881 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:22,088 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:22,311 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:22,549 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:22,752 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:22,960 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:23,168 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:23,339 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:23,576 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:23,802 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:24,026 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:24,265 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:24,484 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:24,725 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:24,973 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:25,210 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:25,384 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:25,610 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:25,877 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:26,075 [DEBUG] main.py - _on_press_event (L161): The Cube was updated.
+2023-01-11 19:52:26,311 [DEBUG] main.py - _exit_app (L144): Rubik's cube successfully saved
+2023-01-11 19:52:26,311 [INFO] main.py - _exit_app (L150): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:07.][0m
+2023-01-11 20:24:26,912 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 20:24:26,913 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 20:24:26,913 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:24:26,913 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 20:24:26,913 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 20:24:26,913 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 20:24:26,914 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 20:24:30,971 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 20:24:30,971 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 20:24:30,972 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:24:30,972 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 20:24:30,972 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 20:24:30,972 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 20:24:30,972 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 20:25:17,686 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 20:25:17,686 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 20:25:17,686 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:25:17,686 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 20:25:17,687 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 20:25:17,687 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 20:25:17,687 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 20:26:08,131 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 20:26:08,131 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 20:26:08,131 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:26:08,131 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 20:26:08,131 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 20:26:08,131 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 20:26:08,132 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 20:26:42,475 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 20:26:42,475 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 20:26:42,475 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:26:42,476 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 20:26:42,476 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 20:26:42,476 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 20:26:42,476 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 20:26:42,795 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 20:34:48,536 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 20:34:48,536 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 20:34:48,536 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:34:48,536 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 20:34:48,536 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 20:34:48,536 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 20:34:48,537 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 20:34:48,865 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 20:34:48,865 [DEBUG] driver.py - start (L47): Rendering the latest saved state from the Cube:
+2023-01-11 20:34:52,613 [INFO] driver.py - restart (L53): Cube was restarted after 0 moves.
+2023-01-11 20:34:54,183 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:54,422 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:54,653 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:54,822 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:55,062 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:55,294 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:55,510 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:55,728 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:55,938 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:56,149 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:56,329 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:56,526 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:56,710 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:56,933 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:57,146 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:57,377 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:57,538 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:57,747 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:57,934 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:58,137 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:58,287 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:58,484 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:58,694 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:58,888 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:59,031 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:59,250 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:59,442 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:59,593 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:59,804 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:34:59,953 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:00,169 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:00,343 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:00,514 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:00,736 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:00,920 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:01,091 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:01,306 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:01,457 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:01,651 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:01,809 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:01,983 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:05,228 [DEBUG] driver.py - exit (L62): Rubik's cube successfully saved
+2023-01-11 20:35:05,228 [INFO] main.py - _exit_app (L146): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:16.][0m
+2023-01-11 20:35:08,842 [DEBUG] main.py - __init__ (L62): 
+2023-01-11 20:35:08,842 [DEBUG] main.py - __init__ (L63): Initial args: 
+2023-01-11 20:35:08,842 [DEBUG] main.py - __init__ (L65): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:35:08,842 [DEBUG] main.py - __init__ (L65): >> cube: data/cube_saved.json
+2023-01-11 20:35:08,843 [DEBUG] main.py - __init__ (L65): >> mapping: data/face_map.json
+2023-01-11 20:35:08,843 [DEBUG] main.py - __init__ (L65): >> log: ['debug']
+2023-01-11 20:35:08,843 [DEBUG] main.py - __init__ (L66): 
+
+2023-01-11 20:35:09,162 [INFO] main.py - run (L124): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 20:35:09,162 [DEBUG] driver.py - start (L47): Rendering the latest saved state from the Cube:
+2023-01-11 20:35:13,110 [INFO] driver.py - restart (L53): Cube was restarted after 0 moves.
+2023-01-11 20:35:17,484 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:17,731 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:17,972 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:18,192 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:18,437 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:18,678 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:18,939 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:19,162 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:19,374 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:19,580 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:19,856 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:20,211 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:20,439 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:20,755 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:20,987 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:21,243 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:21,529 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:21,834 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:22,124 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:22,875 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:23,226 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:23,478 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:25,254 [INFO] driver.py - restart (L53): Cube was restarted after 22 moves.
+2023-01-11 20:35:28,794 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:29,729 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:29,968 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:30,406 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:30,625 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:30,930 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:31,183 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:31,609 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:31,866 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:32,485 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:32,745 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:35:34,269 [INFO] driver.py - restart (L53): Cube was restarted after 11 moves.
+2023-01-11 20:35:36,751 [DEBUG] driver.py - exit (L62): Rubik's cube successfully saved
+2023-01-11 20:35:36,751 [INFO] main.py - _exit_app (L146): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:27.][0m
+2023-01-11 20:39:18,832 [DEBUG] main.py - __init__ (L61): 
+2023-01-11 20:39:18,832 [DEBUG] main.py - __init__ (L62): Initial args: 
+2023-01-11 20:39:18,832 [DEBUG] main.py - __init__ (L64): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:39:18,832 [DEBUG] main.py - __init__ (L64): >> cube: data/cube_saved.json
+2023-01-11 20:39:18,833 [DEBUG] main.py - __init__ (L64): >> mapping: data/face_map.json
+2023-01-11 20:39:18,833 [DEBUG] main.py - __init__ (L64): >> log: ['debug']
+2023-01-11 20:39:18,833 [DEBUG] main.py - __init__ (L65): 
+
+2023-01-11 20:39:19,168 [INFO] main.py - run (L123): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 20:39:19,169 [DEBUG] driver.py - start (L47): Rendering the latest saved state from the Cube:
+2023-01-11 20:39:21,968 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:22,237 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:22,476 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:22,748 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:22,926 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:23,169 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:23,396 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:23,651 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:23,875 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:24,117 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:24,290 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:24,517 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:24,753 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:25,017 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:25,228 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:25,419 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:25,658 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:25,888 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:26,108 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:26,373 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:26,578 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:26,766 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:26,992 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:27,212 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:27,442 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:27,677 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:27,892 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:28,998 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:29,244 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:29,514 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:29,758 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:29,998 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:30,316 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:30,557 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:30,793 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:31,073 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:31,306 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:31,533 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:31,794 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:32,146 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:32,426 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:32,678 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:32,905 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:33,165 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:33,399 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:33,633 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:33,851 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:34,040 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:34,306 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:34,519 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:34,760 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:34,995 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:35,215 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:35,457 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:35,684 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:35,908 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:36,143 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:36,363 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:36,576 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:39:36,799 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:45,073 [DEBUG] main.py - __init__ (L61): 
+2023-01-11 20:40:45,073 [DEBUG] main.py - __init__ (L62): Initial args: 
+2023-01-11 20:40:45,073 [DEBUG] main.py - __init__ (L64): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:40:45,073 [DEBUG] main.py - __init__ (L64): >> cube: data/cube_saved.json
+2023-01-11 20:40:45,073 [DEBUG] main.py - __init__ (L64): >> mapping: data/face_map.json
+2023-01-11 20:40:45,073 [DEBUG] main.py - __init__ (L64): >> log: ['debug']
+2023-01-11 20:40:45,074 [DEBUG] main.py - __init__ (L65): 
+
+2023-01-11 20:40:45,412 [INFO] main.py - run (L123): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 20:40:45,413 [DEBUG] driver.py - start (L47): Rendering the latest saved state from the Cube:
+2023-01-11 20:40:48,233 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:48,434 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:48,670 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:48,911 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:49,088 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:49,372 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:49,626 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:49,848 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:50,061 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:50,251 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:50,511 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:50,739 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:50,950 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:51,224 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:51,443 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:51,661 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:51,919 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:52,084 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:40:53,282 [DEBUG] driver.py - exit (L62): Rubik's cube successfully saved
+2023-01-11 20:40:53,282 [INFO] main.py - _exit_app (L145): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:00:07.][0m
+2023-01-11 20:46:58,106 [DEBUG] main.py - __init__ (L61): 
+2023-01-11 20:46:58,106 [DEBUG] main.py - __init__ (L62): Initial args: 
+2023-01-11 20:46:58,106 [DEBUG] main.py - __init__ (L64): >> config: rubiks_cube_solver/config/settings.yaml
+2023-01-11 20:46:58,106 [DEBUG] main.py - __init__ (L64): >> cube: data/cube_saved.json
+2023-01-11 20:46:58,107 [DEBUG] main.py - __init__ (L64): >> mapping: data/face_map.json
+2023-01-11 20:46:58,107 [DEBUG] main.py - __init__ (L64): >> log: ['debug']
+2023-01-11 20:46:58,107 [DEBUG] main.py - __init__ (L65): 
+
+2023-01-11 20:46:58,503 [INFO] main.py - run (L123): [1m[Initializing rubiks-cube-solver][0m
+2023-01-11 20:46:58,503 [DEBUG] driver.py - start (L47): Rendering the latest saved state from the Cube:
+2023-01-11 20:47:00,962 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:01,208 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:01,403 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:01,642 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:01,892 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:02,115 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:02,343 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:02,590 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:02,816 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:03,056 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:03,274 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:03,532 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:03,759 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:03,986 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:04,194 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 20:47:04,403 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:05,098 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:05,379 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:05,613 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:05,826 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:06,105 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:06,319 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:06,541 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:06,786 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:07,068 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:07,343 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:07,596 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:07,837 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:08,146 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:08,422 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:08,668 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:08,908 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:09,169 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:09,429 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:09,655 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:09,879 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:10,103 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:10,339 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:10,573 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:10,803 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:05:11,016 [DEBUG] driver.py - move (L66): The Cube was updated.
+2023-01-11 21:07:58,283 [DEBUG] driver.py - exit (L62): Rubik's cube successfully saved
+2023-01-11 21:07:58,283 [INFO] main.py - _exit_app (L145): [1m[Exiting rubiks-cube-solver app.Total elapsed time: 00:20:59.][0m

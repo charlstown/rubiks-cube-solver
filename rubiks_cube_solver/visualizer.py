@@ -36,7 +36,7 @@ class Viz:
         self.fig = plt.figure(figsize=(w*dpi, h*dpi))
 
         # Creating the axes
-        self.ax = self.fig.add_subplot(111, projection='3d')
+        self.ax = self.fig.add_subplot(111, projection='3d', computed_zorder=True)
 
         # Configuring the axes
         self.ax.view_init(elev=30, azim=45)
@@ -59,7 +59,7 @@ class Viz:
         self.help_window = False
         self.txt_help = self.ax.text2D(0, 0, '', transform=self.ax.transAxes,
                                         ha='left', va='center',
-                                            fontstyle='italic', color='#153543', bbox=props, zorder=10)
+                                            fontstyle='italic', color='#153543', bbox=props, zorder=5)
 
     def connect_events_to_interface(self, driver):
         self.fig.canvas.mpl_connect('key_press_event', driver)

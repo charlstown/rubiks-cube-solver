@@ -19,13 +19,12 @@ import argparse
 import json
 import yaml
 from io import StringIO
-import subprocess
 
 # Classes
 from cube import Cube
+from driver import Driver
 from visualizer import Viz
-from drive import Drive
-from pop_up import PopUp
+from worker import Worker
 
 
 class App:
@@ -33,7 +32,7 @@ class App:
     APP Class acting as an orchestrator calling other classes.
     Methods:
         - run
-        - __auto_move
+        - _auto_move
         - _interface
     """
 
@@ -69,20 +68,15 @@ class App:
         with open(dir_face_map) as f:       # Mapped faces
             face_map = json.load(f)
         with open(dir_cube_saved) as f:     # Cube saved
-            self.data = json.load(f)
+            data = json.load(f)
 
         # Instance
-        self.cube = Cube(self.config, self.data)
-        self.viz = Viz(self.config)
-        self.drive = Drive(self.config, face_map)
-        self.popup = PopUp(self.config)
+        self.driver = Driver(self.config, logger, face_map, data)
 
         # Variables
         self.log = logger
         self.time_start = time.time()
         self.console_help = self.config['console_help']
-        self.dcube = self.cube.load()
-        self.moves_counter = 0
 
     def _get_logger(self, level: str) -> logging.Logger:
         """
@@ -124,13 +118,9 @@ class App:
         self.log.info(f"\033[1m[Initializing {self.config['project_name']}]\033[0m")
 
         # Connecting events to interface
-        self.viz.connect_events_to_interface(self._on_press_event)
+        self.driver.start(event_listener = self._on_press_event)
 
-        # Rendering latest state
-        self.log.debug("Rendering the latest saved state from the Cube:")
-        self.viz.render(self.dcube, self.moves_counter)
-
-        # Starting the communication interface
+        # Starting the interface
         self._interface()
 
         # Exiting the app
@@ -141,8 +131,7 @@ class App:
         This method close the program
         """
         # Save the state of the cube
-        self.cube.save(self.dcube)
-        self.log.debug("Rubik\'s cube successfully saved")
+        self.driver.exit()
 
         # Exit the app
         end_app = time.time()
@@ -158,38 +147,29 @@ class App:
 
         # Check for moves
         if event.key in moves:
-            self.dcube = self.drive.move(self.dcube, f'{cmds[event.key]}1')
-            self.log.debug("The Cube was updated.")
-            self.moves_counter += 1
-            self.viz.render(self.dcube, self.moves_counter)
+            move = f'{cmds[event.key]}1'
+            self.driver.move(permutation=move)
 
         # Check for reset
         if event.key == 'r':
-            self.dcube = self.cube.restart()
-            self.viz.render(self.dcube, 0)
-            self.log.info(f'Cube was restarted after {self.moves_counter} moves.')
-            self.moves_counter = 0
+            self.driver.restart()
 
         # Check for help
         if event.key == 'h':
-            self.viz.show_help()
+            self.driver.help()
 
         # Check for close program
         if event.key == 'q':
             self._exit_app()
 
-    def __auto_move(self, repetitions: int):
+    def _auto_move(self, repetitions: int):
         """
         This method generates the input number of random moves in the cube.
         :param repetitions: number of moves to repeat.
         :return: None.
         """
         for i in range(repetitions + 1):
-            permutation = self.drive.random_move()
-            self.dcube = self.drive.move(self.dcube, permutation)
-            self.viz.render(self.dcube, self.moves_counter)
-            self.moves_counter += 1
-            # time.sleep(1)
+            self.driver.random_move()
 
     def _interface(self):
         """
@@ -199,28 +179,22 @@ class App:
         moves = str(list(self.config['console_moves'].keys()))[1:-1]
         intro = f"""Type a move sequence ({moves}), 'r' to reset, 'h' for help or q to quit:\n"""
         inpt = input(intro)
-        check = self.drive.check_for_moves(inpt)
+        check = self.worker.check_for_moves(inpt)
 
         # Input commands
         if inpt != 'c' and check:
-            self.dcube = self.drive.move(self.dcube, inpt)
-            print("[APP] The Cube was updated")
-            self.moves_counter += 1
-            self.viz.render(self.dcube, self.moves_counter)
+            self.driver.move()
             return self._interface()
         elif inpt == 'h':
             print(self.console_help)
             return self._interface()
         elif inpt == 'r':
-            self.dcube = self.cube.restart()
-            self.moves_counter = 0
-            self.viz.render(self.dcube, self.moves_counter)
-            print(f'[APP] Cube was restarted after {self.moves_counter} moves.')
+            self.driver.move()
             return self._interface()
         elif inpt == 'x':
             msg = "[APP] Please select the number of random moves to apply:\n"
-            moves = int(input(msg))
-            self.__auto_move(moves)
+            n_moves = int(input(msg))
+            self._auto_move(n_moves)
             return self._interface()
         elif inpt != 'q' and not check:
             print(f"[APP] Sorry, the command {inpt} is not valid.")
